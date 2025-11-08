@@ -1,0 +1,8 @@
+{
+  "name": "skill-claude-plugin",
+  "description": "A skill that guides you through creating Claude Code plugins with correct structure, mandatory testing workflow, and prevents common mistakes",
+  "version": "1.0.0",
+  "author": {
+    "name": "Alexander Opalic"
+  }
+}
