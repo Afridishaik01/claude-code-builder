@@ -3,15 +3,12 @@
   "version": "1.0.0",
   "description": "Create skills, subagents, hooks, commands, and plugins for Claude Code",
   "author": {
-    "name": "Alexander Opalic"
+    "name": "Alexander Opalic",
+    "url": "https://github.com/alexanderop/claude-code-builder"
   },
-  "commands": [
-    "claude-skill",
-    "create-agent",
-    "create-command",
-    "claude-hook",
-    "create-plugin",
-    "claude-md",
-    "claude-output-style"
-  ]
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexanderop/claude-code-builder"
+  },
+  "license": "MIT"
 }

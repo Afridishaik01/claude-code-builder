@@ -81,19 +81,18 @@ Customize how Claude presents information and responses to match your preference
 
 ### Local Development/Testing
 
-This project includes a pre-configured development marketplace for testing:
+This project includes a pre-configured marketplace for testing:
 
 ```bash
-# From the parent directory of skill-claude-plugin
-cd ..
+# From the claude-code-builder directory
 claude
 
 # In Claude Code session:
-/plugin marketplace add ./dev-marketplace
-/plugin install claude-code-builder@dev-marketplace
+/plugin marketplace add .
+/plugin install claude-code-builder@claude-code-builder-dev
 ```
 
-The `dev-marketplace` is already set up with the correct structure pointing to the plugin source.
+The `.claude-plugin/marketplace.json` is already configured to serve this directory as both a marketplace and plugin.
 
 ### Manual Installation
 

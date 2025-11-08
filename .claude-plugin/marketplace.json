@@ -1,0 +1,13 @@
+{
+  "name": "claude-code-builder-dev",
+  "owner": {
+    "name": "Alexander Opalic"
+  },
+  "plugins": [
+    {
+      "name": "claude-code-builder",
+      "source": ".",
+      "description": "Create skills, subagents, hooks, commands, and plugins for Claude Code"
+    }
+  ]
+}
