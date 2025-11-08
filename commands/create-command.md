@@ -41,9 +41,21 @@ argument-hint: [args...]
 **Outputs:** `STATUS=<OK|FAIL> [key=value ...]`
 
 ## Instructions
-1. Validate inputs
-2. Execute primary action
-3. Print STATUS line
+
+1. **Validate inputs:**
+   - Check that required arguments are provided
+   - Validate argument format/values
+
+2. **Execute the command:**
+
+\`\`\`bash
+# Add specific bash commands here
+# Example: git worktree add path/to/worktree branch-name
+\`\`\`
+
+3. **Output status:**
+   - Print `STATUS=OK` on success
+   - Print `STATUS=FAIL ERROR="message"` on failure
 
 ## Constraints
 - Idempotent and deterministic
