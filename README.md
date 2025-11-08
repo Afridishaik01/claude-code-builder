@@ -69,61 +69,44 @@ Customize how Claude presents information and responses to match your preference
 
 ## Installation
 
-### Via Plugin Marketplace
+### Quick Install (Recommended)
+
+Install directly from GitHub in two commands:
 
 ```bash
-# Add marketplace containing this plugin
-/plugin marketplace add <marketplace-url>
+# Add the marketplace
+/plugin marketplace add alexanderop/claude-code-builder
 
 # Install the plugin
-/plugin install claude-code-builder@<marketplace-name>
+/plugin install claude-code-builder@claude-code-builder-dev
+```
+
+That's it! All commands will be immediately available. Type `/help` to see them listed.
+
+### Alternative: Git URL
+
+You can also add the marketplace using the full Git URL:
+
+```bash
+/plugin marketplace add https://github.com/alexanderop/claude-code-builder.git
+/plugin install claude-code-builder@claude-code-builder-dev
 ```
 
 ### Local Development/Testing
 
-This project includes a pre-configured marketplace for testing:
+For plugin development or testing local changes:
 
 ```bash
-# From the claude-code-builder directory
+# Clone and navigate to the repository
+git clone https://github.com/alexanderop/claude-code-builder.git
+cd claude-code-builder
+
+# Start Claude Code
 claude
 
-# In Claude Code session:
+# Add local marketplace and install
 /plugin marketplace add .
 /plugin install claude-code-builder@claude-code-builder-dev
-```
-
-The `.claude-plugin/marketplace.json` is already configured to serve this directory as both a marketplace and plugin.
-
-### Manual Installation
-
-```bash
-# Clone the repository
-cd ~/your-plugins
-git clone https://github.com/alexanderop/claude-code-builder.git
-
-# Create a local marketplace
-mkdir my-marketplace
-mkdir my-marketplace/.claude-plugin
-
-# Create marketplace manifest
-cat > my-marketplace/.claude-plugin/marketplace.json << 'EOF'
-{
-  "name": "my-marketplace",
-  "owner": {"name": "Your Name"},
-  "plugins": [{
-    "name": "claude-code-builder",
-    "source": "./claude-code-builder",
-    "description": "Create skills, subagents, hooks, commands, and plugins"
-  }]
-}
-EOF
-
-# Move plugin into marketplace
-mv claude-code-builder my-marketplace/
-
-# Add marketplace and install
-/plugin marketplace add ./my-marketplace
-/plugin install claude-code-builder@my-marketplace
 ```
 
 ## Usage
