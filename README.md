@@ -1,8 +1,8 @@
-# Claude Code Toolkit
+# Claude Code Builder
 
 > Create skills, subagents, hooks, commands, and plugins for Claude Code
 
-A comprehensive toolkit plugin that helps you create and manage Claude Code customizations with best practices built-in.
+A comprehensive builder plugin that helps you create and manage Claude Code customizations with best practices built-in.
 
 ## What's Inside
 
@@ -15,6 +15,7 @@ This plugin provides slash commands to create:
 - **Plugins** - Distributable Claude Code packages (`/create-plugin`)
 - **Documentation** - Project CLAUDE.md files (`/claude-md`)
 - **Output Styles** - Custom Claude response formatting (`/claude-output-style`)
+- **Publishing** - Publish plugins to marketplaces (`/publish-claude-plugin`)
 
 ## Available Commands
 
@@ -67,6 +68,13 @@ Customize how Claude presents information and responses to match your preference
 
 **Usage:** `/claude-output-style`
 
+### `/publish-claude-plugin`
+Publish your Claude Code plugin to a marketplace.
+
+Reads plugin metadata from `.claude-plugin/plugin.json` and automates the publication process including git tagging and repository updates.
+
+**Usage:** `/publish-claude-plugin [marketplace-name]`
+
 ## Installation
 
 ### Via Plugin Marketplace
@@ -76,7 +84,7 @@ Customize how Claude presents information and responses to match your preference
 /plugin marketplace add <marketplace-url>
 
 # Install the plugin
-/plugin install claude-code-toolkit@<marketplace-name>
+/plugin install claude-code-builder@<marketplace-name>
 ```
 
 ### Local Development/Testing
@@ -90,7 +98,7 @@ claude
 
 # In Claude Code session:
 /plugin marketplace add ./dev-marketplace
-/plugin install claude-code-toolkit@dev-marketplace
+/plugin install claude-code-builder@dev-marketplace
 ```
 
 The `dev-marketplace` is already set up with the correct structure pointing to the plugin source.
@@ -100,7 +108,7 @@ The `dev-marketplace` is already set up with the correct structure pointing to t
 ```bash
 # Clone the repository
 cd ~/your-plugins
-git clone https://github.com/alexanderop/claude-code-create-toolkit.git
+git clone https://github.com/alexanderop/claude-code-builder.git
 
 # Create a local marketplace
 mkdir my-marketplace
@@ -112,19 +120,19 @@ cat > my-marketplace/.claude-plugin/marketplace.json << 'EOF'
   "name": "my-marketplace",
   "owner": {"name": "Your Name"},
   "plugins": [{
-    "name": "claude-code-toolkit",
-    "source": "./claude-code-toolkit",
+    "name": "claude-code-builder",
+    "source": "./claude-code-builder",
     "description": "Create skills, subagents, hooks, commands, and plugins"
   }]
 }
 EOF
 
 # Move plugin into marketplace
-mv claude-code-toolkit my-marketplace/
+mv claude-code-builder my-marketplace/
 
 # Add marketplace and install
 /plugin marketplace add ./my-marketplace
-/plugin install claude-code-toolkit@my-marketplace
+/plugin install claude-code-builder@my-marketplace
 ```
 
 ## Usage
@@ -152,6 +160,9 @@ After installation, simply invoke any of the creation commands:
 
 # Configure output style
 /claude-output-style
+
+# Publish plugin to marketplace
+/publish-claude-plugin my-marketplace
 ```
 
 Each command will guide you through the creation process with questions about:
@@ -175,7 +186,7 @@ All commands follow Claude Code best practices and include comprehensive testing
 ## Structure
 
 ```
-claude-code-toolkit/
+claude-code-builder/
 ├── .claude-plugin/
 │   └── plugin.json              # Plugin manifest
 ├── commands/                    # Slash commands
@@ -185,7 +196,8 @@ claude-code-toolkit/
 │   ├── claude-hook.md           # Hook creation guide
 │   ├── create-plugin.md         # Plugin creation guide
 │   ├── claude-md.md             # CLAUDE.md generation
-│   └── claude-output-style.md   # Output style configuration
+│   ├── claude-output-style.md   # Output style configuration
+│   └── publish-claude-plugin.md # Plugin publishing automation
 ├── .claude/                     # Local development config
 │   ├── commands/                # Original command source
 │   └── settings.local.json      # Tool permissions
@@ -216,7 +228,7 @@ Contributions welcome! If you find issues or have suggestions:
 
 ## Repository
 
-https://github.com/alexanderop/claude-code-create-toolkit
+https://github.com/alexanderop/claude-code-builder
 
 ## License
 
@@ -232,4 +244,4 @@ This is truly open source software - anyone can use, modify, and distribute it f
 
 **Alexander Opalic**
 
-A comprehensive toolkit for Claude Code customization.
+A comprehensive builder for Claude Code customization.

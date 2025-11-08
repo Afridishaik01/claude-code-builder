@@ -1,5 +1,5 @@
 {
-  "name": "claude-code-toolkit",
+  "name": "claude-code-builder",
   "version": "1.0.0",
   "description": "Create skills, subagents, hooks, commands, and plugins for Claude Code",
   "author": {
@@ -12,6 +12,7 @@
     "claude-hook",
     "create-plugin",
     "claude-md",
-    "claude-output-style"
+    "claude-output-style",
+    "publish-claude-plugin"
   ]
 }
