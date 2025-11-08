@@ -1,8 +1,0 @@
-{
-  "name": "das-hirn",
-  "description": "Personal Claude Code extension with custom rules, subagents, and workflows tailored for my coding style",
-  "version": "1.0.0",
-  "author": {
-    "name": "Alexander Opalic"
-  }
-}
